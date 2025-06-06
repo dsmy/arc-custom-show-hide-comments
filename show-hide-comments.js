@@ -11,11 +11,11 @@ jQuery(document).ready(function() {
 	jQuery(commentsDiv).hide();
 
 	// Append a link to show/hide
-	jQuery('<a/>')
-		.attr('class', 'toggle-comments h3')
-		.attr('href', '#')
-		.html('show &gt;&gt; ')
-		.insertBefore(commentsDiv);
+        jQuery('<a/>')
+                .attr('class', 'toggle-comments h3')
+                .attr('href', '#')
+                .html(arcShowHideData.show_label)
+                .insertBefore(commentsDiv);
 
 	// Encase button in #toggle-comments-container span
 	jQuery('.toggle-comments').wrap(jQuery('<div/>', {
@@ -29,9 +29,9 @@ jQuery(document).ready(function() {
 	// Show/hide the div using jQuery's toggle()
 	jQuery(commentsDiv).toggle('slow', function() {
 	// change the text of the anchor
-		var anchor = jQuery('.toggle-comments');
-		var anchorText = anchor.html() == 'show &gt;&gt; ' ? 'hide &lt;&lt; ' : 'show &gt;&gt; ';
-		jQuery(anchor).html(anchorText);
+                var anchor = jQuery('.toggle-comments');
+                var anchorText = anchor.html() == arcShowHideData.show_label ? arcShowHideData.hide_label : arcShowHideData.show_label;
+                jQuery(anchor).html(anchorText);
 	});
 	});
  
