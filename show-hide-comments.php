@@ -2,6 +2,11 @@
 /*
   Plugin Name: ARC Custom Show/Hide Comments
   Description: Creates a show/hide link or button in the comments section of a post.
+  Version: 1.1.0
+  Author: David Yarde
+  Author URI: https://davidyarde.com
+  Text Domain: arc-show-hide-comments
+  License: GPLv2 or later
   Reference: http://coreyjmahler.com/topics/create-a-button-to-showhide-wordpress-comments-with-a-click/
 */
 
