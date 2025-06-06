@@ -16,7 +16,6 @@ function arcshc_load_script() { // load the file
 }
 
 add_action('wp_enqueue_scripts', 'arcshc_load_script'); // initiate the function
-=======
 define( 'ARC_SHC_VERSION', '1.0.0' );
 
 function load_show_hide_comments_js() { // load the file
